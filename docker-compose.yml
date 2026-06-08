@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:16
+    container_name: pc-db
+    restart: always
+
+    environment:
+      POSTGRES_DB: pc
+      POSTGRES_USER: pc_user
+      POSTGRES_PASSWORD: pc_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: ./backend
+    container_name: pc-web
+
+    command: sh /app/entrypoint.sh
+
+    volumes:
+      - ./backend:/app
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      - db
+
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:
