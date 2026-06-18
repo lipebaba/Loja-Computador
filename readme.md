@@ -1,18 +1,20 @@
-API Loja de Computadores
+# 🖥️ API Loja de Computadores
 
-API REST desenvolvida com Django para gerenciamento de produtos de uma loja de computadores.
+Uma API REST desenvolvida em Django para gerenciamento de produtos de uma loja de computadores.
 
-- Funcionalidades
-Listar produtos
-Consultar produto por ID
-Cadastro de produtos
-Atualização de produtos
-Exclusão de produtos
-Integração com banco de dados PostgreSQL
+## 📋 Funcionalidades
 
-- Tecnologias Utilizadas
-Python 3
-Django 6
-PostgreSQL
-Docker (opcional)
-Git e GitHub
+- Listar produtos
+- Buscar produto por ID
+- Cadastrar produtos
+- Atualizar produtos
+- Excluir produtos
+- Integração com PostgreSQL
+
+## 🚀 Tecnologias Utilizadas
+
+- Python 3
+- Django 6
+- PostgreSQL
+- Git
+- GitHub
