@@ -16,5 +16,6 @@ Uma API REST desenvolvida em Django para gerenciamento de produtos de uma loja d
 - Python 3
 - Django 6
 - PostgreSQL
+- Docker
 - Git
 - GitHub
